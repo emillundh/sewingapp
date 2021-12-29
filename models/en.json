@@ -1,0 +1,39 @@
+{
+  "invocation": "Sewing app",
+  "version": "4.0",
+  "intents": {
+    "SetModeIntent": {
+      "phrases": [
+        "{mode}",
+        "set {mode}",
+        "set mode {mode}"
+      ],
+      "entities":{
+        "mode": {
+          "type": "sewingModeEntityType"
+        }
+      }
+    }
+  },
+  "entityTypes":
+  {
+    "sewingModeEntityType": {
+      "values": [
+        {
+          "value": "Embroidery mode",
+          "synonyms": [
+            "embroidery",
+            "embroidery mode"
+          ]
+        },
+        {
+          "value": "Sew mode",
+          "synonyms": [
+            "sew",
+            "sew mode"
+          ]
+        }
+      ]
+    }
+  }
+}
